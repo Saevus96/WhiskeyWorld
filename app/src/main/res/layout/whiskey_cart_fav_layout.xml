@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+
+        android:layout_width="200dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/imageview_cover_art2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textview_whiskey_name2"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="200dp"
+                android:background="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="0dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/whitePlane"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deleteData"
+                android:layout_width="46dp"
+                android:layout_height="49dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+
+                android:gravity="center"
+                android:text="X"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="10e"
+                android:textColor="@color/whitePlane"
+                android:textSize="15sp" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+
+            android:layout_gravity="bottom">
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:text="-"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:id="@+id/minus"
+        android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/numberOf"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:hint="5"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                />
+            <TextView
+                android:id="@+id/plus"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "whiskeyworld-c2b9c",
+    "cd functions; npm install; cd-": "whiskeyworld-c2b9c"
+  }
+}

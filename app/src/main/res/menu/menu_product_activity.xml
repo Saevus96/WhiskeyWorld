@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kpchl.whiskeyworld.ProductActivity">
+
+    <item android:id="@+id/shoppingCart"
+        android:title="shopping Cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:iconTint="@color/colorAccent"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        />
+</menu>

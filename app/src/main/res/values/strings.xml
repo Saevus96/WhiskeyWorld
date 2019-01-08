@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">WhiskeyWorld</string>
+    <string name="facebook_app_id">232770817621537</string>
+    <string name="fb_login_protocol_scheme">fb232770817621537</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_product2">ProductActivity2</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <string-array name="Member_names">
+        <item>Robert</item>
+        <item>Shanni</item>
+        <item>Rachael</item>
+        <item>Maddy</item>
+        <item>Kate</item>
+        <item>Nikhil</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/ic_settings_black_24dp</item>
+        <item>@drawable/ic_arrow</item>
+        <item>@drawable/ic_comments</item>
+        <item>@drawable/ic_favorite_black_24dp</item>
+        <item>@drawable/ic_receipt</item>
+        <item>@drawable/ic_shopping_cart_black_24dp</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues">
+        <item>Blogging</item>
+        <item>Available</item>
+        <item>Busy</item>
+        <item>In a meeting</item>
+        <item>At work</item>
+        <item>At gym</item>
+    </string-array>
+
+    <!-- contact type -->
+    <string-array name="contactType">
+        <item>Mobile</item>
+        <item>Work</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Mobile</item>
+    </string-array>
+    <string name="title_activity_my_addresses">MyAddresses</string>
+    <string name="title_activity_about_us">About Us</string>
+</resources>

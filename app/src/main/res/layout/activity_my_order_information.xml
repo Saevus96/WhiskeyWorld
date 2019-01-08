@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_information.MyOrderInformation"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLay"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_toStartOf="@id/txDetails"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Order Details"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/txDetails"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_toEndOf="@id/txDetails"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"/>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Date: "
+        android:textSize="15sp"
+        android:id="@+id/txDate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/txDate"
+        android:layout_marginStart="10dp"
+        android:id="@+id/orderDate"
+        />
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID: "
+            android:textSize="15sp"
+            android:id="@+id/txID"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="ID"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/txID"
+                android:id="@+id/orderID"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Price: "
+            android:textSize="15sp"
+            android:id="@+id/txPrice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txPrice"
+                android:textSize="15sp"
+                android:text="PRICE"
+                android:layout_marginStart="10dp"
+                android:id="@+id/orderPrice"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Status: "
+            android:textSize="15sp"
+            android:id="@+id/txStatus"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txStatus"
+                android:id="@+id/orderStatus"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:text="STATUS"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_toStartOf="@id/txAddressorder"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Shipping Address"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txAddressorder"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_toEndOf="@id/txAddressorder"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Name and Surname: "
+                android:id="@+id/txName"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txName"
+                android:textSize="15sp"
+                android:text="Jan Kowalski"
+                android:id="@+id/name_surname"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Address: "
+                android:id="@+id/txAddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txAddress"
+                android:textSize="15sp"
+                android:text="FILIPINY"
+                android:layout_marginStart="10dp"
+                android:id="@+id/address"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="City: "
+                android:id="@+id/txCity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txCity"
+                android:textSize="15sp"
+                android:text="FILIPINY"
+                android:layout_marginStart="10dp"
+                android:id="@+id/city"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Country: "
+                android:id="@+id/txCountry"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txCountry"
+                android:textSize="15sp"
+                android:text="POLAND"
+                android:id="@+id/country"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Postal Code: "
+                android:id="@+id/txPost"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txPost"
+                android:textSize="15sp"
+                android:text="85-855"
+                android:layout_marginStart="10dp"
+                android:id="@+id/post"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Phone Number: "
+                android:id="@+id/txPhone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txPhone"
+                android:textSize="15sp"
+                android:id="@+id/phone"
+                android:text="+48 623148684"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="E-Mail: "
+                android:id="@+id/txEmail"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txEmail"
+                android:textSize="15sp"
+                android:id="@+id/email"
+                android:text="Filipny@gmail.com"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_toStartOf="@id/txProductorder"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Ordered Products"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/txProductorder"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_toEndOf="@id/txProductorder"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/linearLay"
+        android:id="@+id/orderListView"
+        style="@android:style/Widget.DeviceDefault.ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </ListView>
+</RelativeLayout>

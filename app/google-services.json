@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "177263727443",
+    "firebase_url": "https://whiskeyworld-206f0.firebaseio.com",
+    "project_id": "whiskeyworld-206f0",
+    "storage_bucket": "whiskeyworld-206f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177263727443:android:dc43a566e6c1ff92",
+        "android_client_info": {
+          "package_name": "com.example.kpchl.whiskeyworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177263727443-jj62a7hqc9a26jar0vsbkbb849odls3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kpchl.whiskeyworld",
+            "certificate_hash": "25af3a7abc4e450a7dbe18ad9c0acc75abaecd8d"
+          }
+        },
+        {
+          "client_id": "177263727443-rtnj0qc8n9u5534qekhgm5vts3q1dsh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM9bKOqnWRjc6rjMD3rmLocnFOzc8bKwY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177263727443-rtnj0qc8n9u5534qekhgm5vts3q1dsh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
