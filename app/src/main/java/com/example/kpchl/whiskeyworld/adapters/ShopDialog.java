@@ -40,6 +40,7 @@ public class ShopDialog extends ArrayAdapter<AddToCart> {
         ImageView photo;
         TextView name;
         TextView howMany;
+        TextView productprice;
 
     }
 
@@ -63,6 +64,7 @@ public class ShopDialog extends ArrayAdapter<AddToCart> {
             viewHolder.photo = row.findViewById(R.id.photo);
             viewHolder.name = row.findViewById(R.id.name);
             viewHolder.howMany = row.findViewById(R.id.howmany);
+            viewHolder.productprice = row.findViewById(R.id.productprice);
             row.setTag(viewHolder);
         } else {
             row = convertView;
@@ -77,7 +79,7 @@ public class ShopDialog extends ArrayAdapter<AddToCart> {
         viewHolder.name.setText(item.getName());
 
         viewHolder.howMany.setText(String.valueOf(item.getNumberOfProduct()));
-
+        viewHolder.productprice.setText(item.getPrice()+"€");
         row.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

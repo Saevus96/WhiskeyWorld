@@ -88,7 +88,7 @@ public class AboutUs extends AppCompatActivity implements OnMapReadyCallback {
                 "Address: ul. Pomorska nr 149/153\n" +
                 "90-236 Łódź"));*/
 
-        Marker marker = mMap.addMarker(new MarkerOptions().position(point).title("Whiskey World").snippet("Address: ul. Pomorska nr 149/153, \n" +
+        Marker marker = mMap.addMarker(new MarkerOptions().position(point).title("Whisky World").snippet("Address: ul. Pomorska nr 149/153, \n" +
                 "90-236 Łódź \n"+
                 "Contact: 668326625 \n" )
                 );

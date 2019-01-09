@@ -116,9 +116,6 @@ public class ShopCart extends Fragment implements View.OnClickListener {
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
 
                             movieAdapter.notifyDataSetChanged();
-                            gridView.setVisibility(View.GONE);
-
-
 
             }
 
@@ -126,7 +123,7 @@ public class ShopCart extends Fragment implements View.OnClickListener {
             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
 
                 movieAdapter.notifyDataSetChanged();
-                gridView.setVisibility(View.GONE);
+
             }
 
             @Override
@@ -151,7 +148,7 @@ public class ShopCart extends Fragment implements View.OnClickListener {
                 }
                 if(!dataSnapshot.exists())
                 {
-
+                    gridView.setVisibility(View.GONE);
                     btnPay.setVisibility(View.INVISIBLE);
                     shop_holder.setVisibility(View.VISIBLE);
 
@@ -175,6 +172,7 @@ public class ShopCart extends Fragment implements View.OnClickListener {
                 Intent intent = new Intent(getActivity(),ProductActivity.class);
                 intent.putExtra("Whiskey Name", whiskeyString);
                 startActivity(intent);
+
 
 
 

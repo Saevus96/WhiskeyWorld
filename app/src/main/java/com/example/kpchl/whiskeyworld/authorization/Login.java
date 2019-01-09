@@ -53,6 +53,7 @@ public class Login extends AppCompatActivity  {
     private TextInputLayout editTextPassword;
     private FirebaseAuth firebaseAuth;
     private CallbackManager mCallbackManager;
+    private TextView forgot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +66,7 @@ public class Login extends AppCompatActivity  {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow);
         getSupportActionBar().setTitle("");
+        forgot = findViewById(R.id.forgot);
         logo = findViewById(R.id.logo);
         dataCard = findViewById(R.id.dataCard);
         login = findViewById(R.id.loginCard);
@@ -83,7 +85,12 @@ public class Login extends AppCompatActivity  {
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         mCallbackManager = CallbackManager.Factory.create();
-
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ForgotPassword.class));
+            }
+        });
         LoginManager.getInstance().registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
 
 

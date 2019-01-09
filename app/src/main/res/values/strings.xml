@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WhiskeyWorld</string>
+    <string name="app_name">Whisky World</string>
     <string name="facebook_app_id">232770817621537</string>
     <string name="fb_login_protocol_scheme">fb232770817621537</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

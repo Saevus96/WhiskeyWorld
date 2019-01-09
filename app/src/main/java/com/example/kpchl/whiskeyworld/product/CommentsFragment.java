@@ -88,7 +88,7 @@ public class CommentsFragment extends Fragment implements View.OnClickListener {
         commentListView = view.findViewById(R.id.commentListView);
         commentAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, commentsList);
        // commentListView.setAdapter(commentAdapter);
-        customCommentList = new CustomCommentList(getContext(), commentList);
+        customCommentList = new CustomCommentList(getContext(), commentList, whiskeyName);
         commentListView.setAdapter(customCommentList);
        mySwipeRefreshLayout = view.findViewById(R.id.swiperefresh);
 
@@ -96,7 +96,7 @@ public class CommentsFragment extends Fragment implements View.OnClickListener {
             @Override
             public void onRefresh() {
 
-                customCommentList = new CustomCommentList(getContext(), commentList);
+                customCommentList = new CustomCommentList(getContext(), commentList, whiskeyName);
                 commentListView.setAdapter(customCommentList);
                 mySwipeRefreshLayout.setRefreshing(false);
 

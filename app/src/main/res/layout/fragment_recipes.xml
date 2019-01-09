@@ -1,9 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:src="@drawable/imagerecipes" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/slider">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOURBON OLD FASHIONED COCKTAIL"
+
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:id="@+id/title"
+        />
+        <ImageView
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/whiskeyImage"
+            android:src="@drawable/drink"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whiskeyImage"
+        android:layout_marginTop="20dp"
+        android:id="@+id/titleabout"
+        android:text="ABOUT THE BOURBON OLD FASHIONED COCKTAIL"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/colorAccent"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleabout"
+        android:id="@+id/about"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="When you get right down to it, the Bourbon Old Fashioned is little more than a slug of whiskey, seasoned and sweetened. Yet for all of its suave simplicity, the drink remains as relevant today as it was when it first captured drinkers’ hearts 200 years ago.
+
+In truth, you could draw a straight line connecting this drink to the first recorded definition of the cocktail category in general (circa 1806), which calls for spirits, sugar, water and bitters. You could also skip the history lesson and simply make the drink. Do the latter.
+
+Start by using good bourbon, the rule being that if you wouldn’t sip it by itself it has no place at the helm of a Bourbon Old Fashioned. (There are other whiskey drinks for masking subpar booze—this isn’t one of them.) From there, the cocktail-minded seem to break into two camps: simple syrup or muddled sugar.
+
+While a barspoon of syrup can cut your prep time in half, it robs the drink of some of the weight and texture that makes it so appealing. And anyway, what’s the big rush? The Bourbon Old Fashioned isn’t going anywhere."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about"
+        android:id="@+id/ingredientstitle"
+        android:text="INGREDIENTS IN THE BOURBON OLD FASHIONED COCKTAIL "
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingredientstitle"
+            android:id="@+id/ingedients"
+            android:maxLines="10"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="1⁄2 tsp Sugar\n 3 dashes Angostura bitters\n1 tsp Water\n60 ml Bourbon\n\nGarnish: Orange peel\nGlass: Rocks"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="HOW TO MAKE THE BOURBON OLD FASHIONED COCKTAIL"
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/ingedients"
+            android:id="@+id/titlehowtomake"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlehowtomake"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Add the sugar, bitters and water into a rocks glass, and stir until sugar is nearly dissolved.
+
+Fill the glass with large ice cubes, add the bourbon, and gently stir to combine the flavors.
+
+Express the oil of an orange peel over the glass, then drop in."/>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

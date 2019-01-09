@@ -46,9 +46,9 @@ public class Settings extends Fragment {
     String[] orders = {"My Orders"};
     Integer[] ordersImg = {R.drawable.orders};
     String[] user = {"My Addresses", "My Cards"};
-    String[] support = {"Support", "Where can you find us?"};
+    String[] support = {"Where can you find us?"};
     Integer[] userImg = {R.drawable.location,R.drawable.credit_card};
-    Integer[] supportImg = {R.drawable.support,R.drawable.about_us};
+    Integer[] supportImg = {R.drawable.about_us};
     private String provider;
     private TextView logOut;
     private ImageView imageView;
@@ -158,10 +158,10 @@ public class Settings extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
-                    case 0:
+                    case 1:
                         startActivity(new Intent(getActivity(), Support.class));
                         break;
-                    case 1:
+                    case 0:
                         startActivity(new Intent(getActivity(),AboutUs.class));
                         break;
                 }
