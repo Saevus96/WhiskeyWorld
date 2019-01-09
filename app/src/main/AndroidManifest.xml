@@ -148,7 +148,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.kpchl.whiskeyworld.main.MainActivity" />
         </activity>
-        <activity android:name=".product.DialogShopCart" />
+
 
         <uses-library
             android:name="org.apache.http.legacy"
